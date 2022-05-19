@@ -1,15 +1,9 @@
-import React, {useState } from 'react';
-import { StyleSheet, View, ScrollView, Text, Linking, StyleProp, TextStyle, ViewStyle, } from 'react-native';
-import { Header as HeaderRNE, HeaderProps, Icon, SearchBar, ListItem, Avatar  } from '@rneui/themed';
+import React from 'react';
+import { StyleSheet, View, ScrollView } from 'react-native';
+import { Header as HeaderRNE, SearchBar, ListItem, Avatar  } from '@rneui/themed';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-
-const Header = (props) => {
-
-  const [search, setSearch] = useState("");
-  const updateSearch = (search) => {
-    setSearch(search);
-  };
+const Header = () => {
 
   const list = [
     {
@@ -88,8 +82,6 @@ const Header = (props) => {
       />
       <SearchBar
         placeholder="ex. John DOE"
-        onChangeText={updateSearch}
-        value={search}
         lightTheme='true'
         style={{flexDirection:"row-reverse"}}
       />
