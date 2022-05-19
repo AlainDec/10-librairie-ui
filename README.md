@@ -44,3 +44,5 @@ Installer au minimum ces composants : https://reactnativeelements.com/docs/insta
 s'il y a des problèmes de version avec react-native-safe-area-context, il faut exécuter la commande pour réparer les version :
 
   $ expo doctor --fix-dependencies
+
+![Screenshot_20220519-160445_Expo Go](https://user-images.githubusercontent.com/35977024/169313126-d3cc789b-80d9-494e-b79b-241899ad5b77.jpg)
